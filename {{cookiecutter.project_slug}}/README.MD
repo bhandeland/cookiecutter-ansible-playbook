@@ -36,15 +36,6 @@ After creating the venv you can enter it in order to use ansible (this has to be
 1. Run `ansible-galaxy install -r roles/requirements.yml -p roles` in this directory to get the required Ansible roles.
 2. Run `ansible-playbook -i inventory/<inventory_file> --key-file "~/.ssh/<private_key>" -u <user-remote> {{ cookiecutter.project_slug }}-playbook.yml --diff --check`
 
-### Provisioning with Vagrant
-
-1. Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
-2. Download and install [Vagrant](http://www.vagrantup.com/downloads.html).
-3. Create Virtual environment
-4. Run `ansible-galaxy install -r roles/requirements.yml -p roles` in this directory to get the required Ansible roles.
-5. Run `vagrant up` from `provisioner` folder to build the VM .
-6. Run `vagrant destroy` from `provisioner` folder to delete the VM .
-
 ## License
 
 {{ cookiecutter.license }}
